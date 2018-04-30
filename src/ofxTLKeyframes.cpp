@@ -570,6 +570,7 @@ vector<ofxTLKeyframe*>& ofxTLKeyframes::getKeyframes(){
 
 string ofxTLKeyframes::copyRequest(){
 	if(selectedKeyframes.size() > 0){
+        cout << "copy request: " <<getXMLStringForKeyframes(selectedKeyframes) << endl;
 		return getXMLStringForKeyframes(selectedKeyframes);
 	}
 	return "";
